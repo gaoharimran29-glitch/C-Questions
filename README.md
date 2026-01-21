@@ -1,9 +1,4 @@
 # C-Questions
-# 📘 C++ Pointer & Memory Assignment  
-**CSE 2025**
-
-This document contains complete solutions to all questions given by the instructor.  
-All programs are written strictly in **C++** and formatted for academic submission.
 
 ---
 
@@ -32,14 +27,14 @@ int main() {
     delete dynamicVar;
     return 0;
 }
-
+```
 # Question 2
 Write a function square(int) and call it:
 Normally
 Using a function pointer
 Copy code
-```
-Cpp
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -61,9 +56,8 @@ Write a program to print:
 Value of a variable
 Address of the variable
 Value stored in the pointer
-Copy code
-Cpp
-```
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -80,9 +74,8 @@ int main() {
 ```
 # Question 4
 Write a program where a pointer stores the address of another variable and copies its value into a third variable using dereferencing.
-Copy code
-Cpp
-```
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -99,23 +92,20 @@ int main() {
 ```
 # Question 5
 What will be the output:
-Copy code
-Cpp
-```
+
+```cpp
 int x = 5;
 int *p = &x;
 *p = 10;
 cout << x;
 Output:
-Copy code
-```
-10
 
+
+10
+```
 # Question 6
 What will be the output:
-Copy code
-Cpp
-```
+```cpp
 int a = 1, b = 2;
 int *p = &a;
 p = &b;
@@ -128,9 +118,8 @@ Copy code
 ```
 # Question 7
 What will be the output:
-Copy code
-Cpp
-```
+
+```cpp
 int x = 10;
 int *p = &x;
 int **pp = &p;
@@ -143,9 +132,8 @@ Copy code
 ```
 # Question 8
 What will be the output:
-Copy code
-Cpp
-```
+
+```cpp
 int a[5] = {2,4,6,8,10};
 int *p = a;
 cout << *p++ << " ";
@@ -157,9 +145,9 @@ Copy code
 ```
 # Question 9
 Write a program to swap two numbers using pointers.
-Copy code
-Cpp
-```
+
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -182,9 +170,8 @@ Implement a simple dynamic integer variable that:
 Is created using new
 Modified through a pointer
 Properly deleted
-Copy code
-Cpp
-```
+
+```cpp
 #include <iostream>
 using namespace std;
 
