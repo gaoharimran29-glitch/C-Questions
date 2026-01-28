@@ -189,3 +189,243 @@ int main() {
     return 0;
 }
 ```
+
+
+
+## 🟢 Question 1: Read and Display Elements of an Array
+
+### Problem Statement  
+Write a C++ program to read and display elements of an array.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Array elements are:\n";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+
+
+---
+
+🟢 Question 2: Find the Sum of All Elements in an Array
+
+Problem Statement
+
+Write a C++ program to find the sum of all elements in an array.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+        sum += arr[i];
+    }
+
+    cout << "Sum of array elements: " << sum;
+
+    return 0;
+}
+
+```
+---
+
+🟢 Question 3: Copy One Array into Another
+
+Problem Statement
+
+Write a C++ program to copy one array into another.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr1[n], arr2[n];
+
+    cout << "Enter elements of first array:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr1[i];
+        arr2[i] = arr1[i];
+    }
+
+    cout << "Copied array elements:\n";
+    for (int i = 0; i < n; i++) {
+        cout << arr2[i] << " ";
+    }
+
+    return 0;
+}
+
+```
+---
+
+🟢 Question 4: Print Array Elements at Even Index Positions
+
+Problem Statement
+
+Write a C++ program to print array elements at even index positions.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Elements at even index positions:\n";
+    for (int i = 0; i < n; i += 2) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+```
+
+---
+
+🟢 Question 5: Read and Display a 2D Array (Matrix)
+
+Problem Statement
+
+Write a C++ program to read and display a 2D array (matrix).
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, cols;
+    cout << "Enter number of rows and columns: ";
+    cin >> rows >> cols;
+
+    int matrix[rows][cols];
+
+    cout << "Enter matrix elements:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    cout << "Matrix:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+```
+---
+
+🟢 Question 6: Print Matrix Elements in Row-Wise Order
+
+Problem Statement
+
+Write a C++ program to print all elements of a matrix in row-wise order.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, cols;
+    cout << "Enter rows and columns: ";
+    cin >> rows >> cols;
+
+    int matrix[rows][cols];
+
+    cout << "Enter matrix elements:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    cout << "Row-wise order:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << matrix[i][j] << " ";
+        }
+    }
+
+    return 0;
+}
+
+```
+---
+
+🟢 Question 7: Print Matrix Elements in Column-Wise Order
+
+Problem Statement
+
+Write a C++ program to print all elements of a matrix in column-wise order.
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, cols;
+    cout << "Enter rows and columns: ";
+    cin >> rows >> cols;
+
+    int matrix[rows][cols];
+
+    cout << "Enter matrix elements:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    cout << "Column-wise order:\n";
+    for (int j = 0; j < cols; j++) {
+        for (int i = 0; i < rows; i++) {
+            cout << matrix[i][j] << " ";
+        }
+    }
+
+    return 0;
+}
+
+```
+---
